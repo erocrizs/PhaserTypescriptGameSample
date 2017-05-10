@@ -1,0 +1,33 @@
+{
+  "name": "phaser-typescript-game-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "multer": "^1.3.0",
+    "phaser-ce": "^2.7.9"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "nodemon": "^1.10.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && concurrently \"npm run tsc:w\" \"nodemon web/server.js\"",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erocrizs/PhaserTypescriptGameSample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erocrizs/PhaserTypescriptGameSample/issues"
+  },
+  "homepage": "https://github.com/erocrizs/PhaserTypescriptGameSample#readme"
+}
