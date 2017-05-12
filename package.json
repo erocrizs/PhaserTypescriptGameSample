@@ -16,7 +16,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && concurrently \"npm run tsc:w\" \"nodemon web/server.js\"",
+    "start": "tsc && concurrently \"npm run tsc:w\" \"nodemon web/server.js\" \"watchify build/game.js -o web/public/js/game.js\"",
     "tsc": "tsc",
     "tsc:w": "tsc -w"
   },
