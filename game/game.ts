@@ -1,5 +1,3 @@
-/// <reference path="..\node_modules\phaser-ce\typescript\phaser.d.ts"/>
-
 class EmptyGame {
 
   private phaserImage: Phaser.Sprite;

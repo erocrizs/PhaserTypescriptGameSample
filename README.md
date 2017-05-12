@@ -12,7 +12,8 @@ The setup only needs to be done once.
  4. Type the `npm install -g browserify watchify` to install browserify and watchify in your device. These two basically converts the javascript produced by the typescript compiler into something more browser-friendly. Watchify is practically a browserify on watch mode. Enter `browserify --version` and `watchify --version` in your command line to ensure you have them in your system. 
  5. Download the project from this repository.
  6. Open a command line in the directory of the repository and then enter `npm install` to install all necessary javascript libraries needed to run the game. The installation is just local, i.e. the files are installed only within the project directory. Everything went fine if no error appeared during the installation.
- 7. Lastly, run `mkdir web/public/js` to make the directory where the client-side javascript file will be saved.
+ 7. Run `typings install github:photonstorm/phaser/v2/typescript/typings.json -GD` on the command line in the directory to install the type definitions for Phaser.
+ 8. Lastly, run `mkdir web/public/js` on the command line to make the directory where the client-side javascript file will be saved.
 
 ## Running
 
