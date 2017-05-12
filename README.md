@@ -34,11 +34,7 @@ The project directory should more-or-less follow this files structure:
 	|
 	+ tsconfig.json
 	|
-	+ typings.json
-	|
 	+ node_modules
-	|
-	+ typings
 	|
 	+ .git
 	|
@@ -63,9 +59,9 @@ The project directory should more-or-less follow this files structure:
 			    + game.js
 ```
 
-This thing you are reading right now is the `README.md`. The git-related stuff are the `.git` folder and `.gitignore` file. The `node_modules` folder is where all the locally-installed libraries are placed. This appears once you do the `npm install` command. The `typings` folder is where all the typescript definitions get installed. This appears after doing the `typings install` command. You probably won't need to touch anything in these files and folders.
+This thing you are reading right now is the `README.md`. The git-related stuff are the `.git` folder and `.gitignore` file. The `node_modules` folder is where all the locally-installed libraries are placed. This appears once you do the `npm install` command. You probably won't need to touch anything in these files and folders.
 
-The `package.json` is the file that tells npm what exactly are the libraries to install when you do `npm install`. The `tsconfig.json` tells the typescript compiler what it needs to know to compile `.ts` files to `.js` files. The `typings.json` tells the typescript compiler about the Phaser library that it needs to recognize. You will probably also never touch these files as well.
+The `package.json` is the file that tells npm what exactly are the libraries to install when you do `npm install`. The `tsconfig.json` tells the typescript compiler what it needs to know to compile `.ts` files to `.js` files. You will probably also never touch these files as well.
 
 The `game` folder is where you save the `.ts` files to implement the game. Typescript is basically javascript with optional strong typing as well as better syntax for OOP. That's an oversimplification and does not do justice to the language, so just check out what it can do for you. The `.ts` files in this folder gets compiled to the `.js` files inside the folder `build`.
 
