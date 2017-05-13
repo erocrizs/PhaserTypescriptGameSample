@@ -1,23 +1,26 @@
-class EmptyGame {
+import {
+    MainMenuState
+} from './state.main-menu';
 
-  private phaserImage: Phaser.Sprite;
-  private game: Phaser.Game;
+import {
+    Globals
+} from './globals';
 
-    constructor(width: number, height: number) {
-      this.game = new Phaser.Game(width, height, Phaser.AUTO, 'game', { preload: this.preload, create: this.create });
+class TapGame {
+    
+    private game: Phaser.Game;
+
+    constructor() {
+        this.game = new Phaser.Game(800, 600, Phaser.AUTO, "game");
+        Globals.game = this.game;
+        
+        this.game.state.add( MainMenuState.id, MainMenuState, false );
+
+        this.game.state.start( MainMenuState.id );
+        
     }
-
-    preload(): void {
-      this.game.load.image('phaserImage', 'assets/sprites/phaser.png');
-    }
-
-    create(): void {
-      this.phaserImage = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, 'phaserImage');
-      this.phaserImage.anchor.setTo(0.5, 0.5);
-    }
-
 }
 
 window.onload = () => {
-  let game = new EmptyGame(800, 600);
+    let game: TapGame = new TapGame();
 }
