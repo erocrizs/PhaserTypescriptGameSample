@@ -1,3 +1,7 @@
+import {
+    GameplayState
+} from './state.gameplay';
+
 export class MainMenuState extends Phaser.State {
 
     public static id: string = "state.main-menu";
@@ -38,7 +42,7 @@ export class MainMenuState extends Phaser.State {
     }
 
     playButtonTrigger() {
-        console.log( "cool stuff" );
+        this.game.state.start( GameplayState.id );
     }
 
 }
